@@ -14,4 +14,31 @@
 не окажется, значит нужно будет вывести пустой массив.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+const arr1 = [];
+for (let i = 0; i < 5; i++) {
+  const rnd = Math.floor(Math.random() * 10);
+  arr1.push(rnd);
+}
+console.log(arr1);
+
+let sum = 0;
+for (let i = 0; i < arr1.length; i++) {
+  sum = sum + arr1[i];
+}
+console.log(sum);
+
+let min = 9;
+for (let i = 0; i < arr1.length; i++) {
+  if (arr1[i] < min) {
+    min = arr1[i];
+  }
+}
+console.log(min);
+
+const arr2 = [];
+for (let i = 0; i < arr1.length; i++) {
+  if (arr1[i] === 3) {
+    arr2.push(i);
+  }
+}
+console.log(arr2);
