@@ -12,4 +12,8 @@ xxxx
 xxxxx
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+let arr3 = ["x"];
+for (let i = 1; i < 21; i++) {
+  console.log(arr3.join(""));
+  arr3.push("x");
+}
